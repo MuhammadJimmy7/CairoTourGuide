@@ -51,7 +51,7 @@ public class DetailActivity extends AppCompatActivity {
             details.setText(R.string.museum_islamic_art);
         } else if (MainActivity.num == 4) {
             backdrop.setImageResource(R.drawable.khanelkalily);
-            mCollapsingToolbar.setTitle("khanel el-Khalili");
+            mCollapsingToolbar.setTitle("khan el-Khalili");
             details.setText(R.string.Khan_el_Khalili);
         } else if (MainActivity.num == 5) {
             backdrop.setImageResource(R.drawable.alazharmosque);
@@ -103,10 +103,10 @@ public class DetailActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        //To support reverse transitions when user clicks the device back button
         //fix the floating button flashing
         FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
         floatingActionButton.setVisibility(View.GONE);
+        //To support reverse transitions when user clicks the device back button
         supportFinishAfterTransition();
     }
 
